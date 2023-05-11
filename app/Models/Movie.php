@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
    public function index(){
+    $movies = Movie::all();
+    dd($movies);
     return view('home');
    }
 }
